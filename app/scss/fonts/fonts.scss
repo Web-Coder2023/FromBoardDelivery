@@ -1,0 +1,12 @@
+// Подключение шрифтов
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-Regular.eot');
+    src: local('Formular'), local('Formular-Regular'),
+        url('../fonts/Formular-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Formular-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+// Шрифт по умолчанию
+$defaultFonts: 'Formular', sans-serif;

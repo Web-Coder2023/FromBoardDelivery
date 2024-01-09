@@ -1,0 +1,33 @@
+.advantages {
+    &__list {
+        margin-top: 24px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(448px, 1fr));
+        gap: 24px;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 0 auto;
+        }
+
+        &-box {
+            display: grid;
+            gap: 12px;
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 142.857%;
+                max-width: 300px;
+            }
+        }
+
+        &-title {
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 133.333%;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.guarantees {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(346px, 1fr));
+        margin-top: 24px;
+        margin-bottom: 36px;
+        gap: 24px;
+
+        @media screen and (max-width: 1819px) {
+            grid-template-columns: repeat(2, minmax(346px, 1fr));
+        }
+        @media screen and (max-width: 999px) {
+            grid-template-columns: repeat(auto-fit, minmax(346px, 1fr));
+        }
+
+        &-item {
+            max-width: 366px;
+            margin: 0 auto;
+
+            h4 {
+                margin-top: 5px;
+                text-align: center;
+                font-size: 18px;
+                font-weight: 900;
+                line-height: 155.556%;
+            }
+        }
+    }
+
+    &__btn {
+        margin: 0 auto;
+    }
+}

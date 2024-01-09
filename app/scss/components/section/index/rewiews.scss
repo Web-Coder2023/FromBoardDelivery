@@ -1,0 +1,67 @@
+$sliderPadding: 47px;
+.rewiews {
+    padding-bottom: 75px;
+    
+    &__inner {
+        position: relative;
+    }
+    
+    &__slider {
+        position: relative;
+        margin-top: 32px;
+        max-width: 1216px;
+    }
+    
+    &__slide {
+        max-width: 626px;
+    }
+
+    &__content {
+        max-width: 626px;
+        border-radius: 16px;
+        background: $white;
+        height: 362.34px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 32px;
+
+        p {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 133.333%;
+        }
+
+        &-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            span {
+                color: #6B7280;
+                font-size: 24px;
+                font-weight: 300;
+                line-height: 133.333%;
+            }
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 100;
+        transform: translateY(-50%);
+
+        &-left {
+            left: 0;
+        }
+
+        &-right {
+            right: 0;
+        }
+    }
+    &__arrow.swiper-button-disabled{
+        opacity: 0.5;
+        cursor: auto;
+    }
+}
